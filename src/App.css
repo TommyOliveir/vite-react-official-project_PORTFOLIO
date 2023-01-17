@@ -29,6 +29,11 @@
 nav {
   display: flex;
   gap: 2.5em;
-
+  cursor: pointer;
   margin-left: auto;
+ 
+}
+nav a {
+  color: black;
+  text-decoration: none;
 }
