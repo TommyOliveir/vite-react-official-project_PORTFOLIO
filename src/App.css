@@ -3,39 +3,32 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  border: 1px solid rgb(197, 50, 234);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.section {
+  height: 600px;
+  background: red;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background: rgb(120, 120, 8);
+  margin-right: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.header {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+
 }
 
-.card {
-  padding: 2em;
-}
+nav {
+  display: flex;
+  gap: 2.5em;
 
-.read-the-docs {
-  color: #888;
+  margin-left: auto;
 }
