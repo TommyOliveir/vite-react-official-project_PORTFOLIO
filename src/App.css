@@ -15,12 +15,13 @@
   display: flex;
   align-items: center;
   font-weight: 600;
-  padding: 1em 2em;
+  padding: 1em 1.5em;
   position: fixed;
   background: rgb(250, 250, 250);
   width: 100%;
   /* background: transparent; */
   top: 0;
+  z-index: 9;
 }
 
 .profile {
@@ -32,18 +33,35 @@
 }
 
 nav {
-  margin-left: auto;
+  margin-top: 4em;
+  /* display: none; */
+}
+
+
+.nav-hidden {
+  display: none;
 }
 
 nav ul {
   display: flex;
-  gap: 2.5em;
+  flex-direction: column;
   cursor: pointer;
-
+  position: fixed;
+  right: 0;
+  background: rgb(250, 250, 250);
+  width: 100%;
+  text-align: right;
+  z-index: -1;
+  padding: 0;
 }
 
 nav li {
   list-style: none;
+  /* background:  rgb(49, 252, 8); */
+  border-top: 1px solid rgb(152, 146, 146);
+  padding: 1em;
+  width: 100%;
+
 }
 
 nav a {
@@ -58,7 +76,72 @@ color: green;
   color: green;
 }
 
+#menu-burger {
+  margin-left: auto;
+}
+
+/* @media  | Header*/
+@media (min-width: 480px) {
+
+
+
+  .header {
+    display: flex;
+    align-content: center;
+    right: 0;
+    /* background: pink; */
+  }
+
+  nav {
+    margin-top: 0em;
+    margin-left: auto;
+  }
+
+  .nav-hidden {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    /* background: rgb(233, 91, 91); */
+    /* background: transparent; */
+    text-align: right;
+    z-index: -1;
+    padding: 0;
+    width: auto;
+    position: relative;
+    z-index: 10;
+  }
+
+  nav li {
+    border-top: none;
+    padding: 0;
+    margin-right: 2em;
+    width: fit-content;
+  }
+
+  nav li:hover {
+    color: #1794ad;
+  }
+
+  #menu-burger {
+    display: none;
+  }
+}
+
+/* @media  | Header*/
+@media (min-width: 1800px) {
+  .container {
+    padding: 1em 5em;
+  }
+}
+
+
 /* Layout */
+
+
 
 #hero {
   display: flex;
@@ -71,10 +154,14 @@ color: green;
 
 #hero h1 {
   font-size: 3em;
+  line-height: 1.5em;
 }
-
+.hero-text {
+padding: 1.2em;
+}
 .section {
-  height: 1000px;
-  background:#fefefe;
+  height: 100vh;
+  background: #fefefe;
   border: 1px solid red;
+  padding: 1em;
 }

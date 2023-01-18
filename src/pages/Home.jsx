@@ -6,9 +6,13 @@ import Projects from '../components/Projects'
 function Home() {
     return (
         <div>
-            <div id="hero" className=" section">
-                <h1>HI, MY NAME IS TOMMY OLIVEIR</h1>
-                <p>I am a frontend developer based in Hungary</p>
+            <div id="hero" className=" section ">
+                <div className="hero-text container">
+                    <h1>HI, MY NAME IS TOMMY OLIVEIR</h1>
+                    <p>I am a frontend developer based in Hungary,
+                        My specialities are REACT JS and Tailwind CSS,
+                        and I love building apps that are delightful to use.</p>
+                </div>
             </div>
             <div id="about" className='section'>
                 <About />
