@@ -27,9 +27,10 @@ function Header() {
                     </li>
                     <li>
                         <Link activeClass="active" smooth spy to="contact">
-                            CONTACT ME
+                            CONTACT
                         </Link>
                     </li>
+                  
                 </ul>
 
 

@@ -74,6 +74,7 @@ color: green;
 }
 
 .section {
-  height: 600px;
-  background: red;
+  height: 1000px;
+  background:#fefefe;
+  border: 1px solid red;
 }

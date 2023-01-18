@@ -1,5 +1,6 @@
 import React from 'react'
 import About from '../components/About'
+import Contact from '../components/Contact'
 import Projects from '../components/Projects'
 
 function Home() {
@@ -10,14 +11,14 @@ function Home() {
                 <p>I am a frontend developer based in Hungary</p>
             </div>
             <div id="about" className='section'>
-                <About></About>
+                <About />
 
             </div>
             <div id="projects" className='section'>
-                <Projects/>
+                <Projects />
             </div>
             <div id="contact" className='section'>
-                <h2>Contact me</h2>
+                <Contact />
             </div>
         </div>
     )
