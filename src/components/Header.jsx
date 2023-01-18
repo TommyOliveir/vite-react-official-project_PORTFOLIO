@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, animateScroll as scroll } from "react-scroll";
 
+
 function Header() {
     const [toggle, setToggle] = useState(false)
 
@@ -20,7 +21,7 @@ function Header() {
         <div className='header container'>
             <div className='profile'></div>
             <p>Ranger</p>
-            <div id="menu-burger" onClick={handleToggle}><i className="ri-menu-line"></i></div>
+            <div id="menu-burger" onClick={handleToggle}>{toggle ? <i class="ri-close-fill"></i>: <i className="ri-menu-line"></i>}</div>
 
 
 
@@ -35,13 +36,13 @@ function Header() {
                     </li>
 
                     <li >
-                        <Link onClick={closeNav} activeClass="active" smooth spy to="about">
-                            ABOUT
+                        <Link onClick={closeNav} activeClass="active" smooth spy to="projects">
+                        PROJECTS
                         </Link>
                     </li>
                     <li>
-                        <Link onClick={closeNav} activeClass="active" smooth spy to="projects">
-                            PROJECTS
+                        <Link onClick={closeNav} activeClass="active" smooth spy to="about">
+                            ABOUT
                         </Link>
                     </li>
                     <li>
