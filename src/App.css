@@ -115,6 +115,10 @@ color: green;
   font-size: .7em;
 }
 
+.socials {
+  text-align: left;
+ }
+
 .section {
   height: 100vh;
   background: #fefefe;
