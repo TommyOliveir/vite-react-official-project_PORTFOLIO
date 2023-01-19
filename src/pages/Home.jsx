@@ -1,21 +1,16 @@
 import React from "react";
 import About from "../components/About";
 import Contact from "../components/Contact";
-import Projects from "../components/Projects";
+import ProjectList from "../components/ProjectList";
+import Socials from "../components/Socials";
 // import Code from "/code.jpg"
 
 function Home() {
   return (
     <div>
       <div id="hero" className=" section ">
-        <div className="contianer">
-          <div className="socials">
-            <ul>
-              <li>insta</li>
-              <li>github</li>
-              <li>linked</li>
-            </ul>
-          </div>
+        <div className="container">
+        
 
           <div className="hero-text ">
             <h1>HI, MY NAME IS NAMEE OLIVEIR</h1>
@@ -25,10 +20,11 @@ function Home() {
               and I love building apps that are delightful to use.
             </h4>
           </div>
+          <Socials />
         </div>
       </div>
       <div id="projects" className="section">
-        <Projects />
+        <ProjectList />
       </div>
       <div id="about" className="section">
         <About />

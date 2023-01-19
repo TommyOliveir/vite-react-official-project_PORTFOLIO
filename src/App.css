@@ -7,9 +7,32 @@
   color: var(--black);
 }
 
+/* #1 - General Layout*/
+
 * {
   box-sizing: border-box;
 }
+
+#about, #contact {
+  height: 100vh;
+}
+
+.btn-link {
+background: var(--blue);
+padding: .5em 1em;
+text-decoration: none;
+border-radius: 5px;
+color: var(--white);
+}
+
+.section {
+  /* height: 100vh; */
+  background: #fefefe;
+  border: 1px solid red;
+  padding: 1em;
+  padding-top: 7em;
+}
+
 
 /* Header */
 .header {
@@ -37,7 +60,6 @@ nav {
   margin-top: 4em;
   /* display: none; */
 }
-
 
 .nav-hidden {
   display: none;
@@ -84,10 +106,12 @@ color: green;
 
 
 
-/* Layout */
 
+/* Sections */
+/* #2 -  Hero  */
 
 #hero {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   place-content: center;
@@ -117,14 +141,62 @@ color: green;
 
 .socials {
   text-align: left;
- }
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: none;
+  font-size: 2em;
+  /* background: #3380c5; */
 
-.section {
-  height: 100vh;
-  background: #fefefe;
-  border: 1px solid red;
-  padding: 1em;
 }
+
+.socials ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.socials ul li:nth-child(1),
+.socials ul li:nth-child(2),
+.socials ul li:nth-child(3) {
+  border-bottom: none;
+}
+
+.socials li {
+  border: 2px var(--black) solid;
+  padding: .4em .3em;
+}
+
+.socials li:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  cursor: pointer;
+}
+
+
+
+
+/* #3 - Projects Section  */
+.project-item {
+margin-top: 2em;
+}
+
+.project-image {
+  background: red;
+  max-width: 100%;
+  width: 700px;
+
+
+}
+
+.project-image-item {
+  width: 100%;
+
+}
+
+
+/* #4 - about Section  */
+
+
 
 
 
@@ -132,7 +204,6 @@ color: green;
 /* ///////////////////////////////////////// */
 /* @media  | Header*/
 @media (min-width: 480px) {
-
 
 
   .header {
@@ -183,6 +254,10 @@ color: green;
   .hero-text {
     max-width: 1200px;
     font-size: 1em;
+  }
+
+  .socials {
+    display: block;
   }
 
 }
