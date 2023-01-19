@@ -13,16 +13,17 @@
   box-sizing: border-box;
 }
 
-#about, #contact {
+#about,
+#contact {
   height: 100vh;
 }
 
 .btn-link {
-background: var(--blue);
-padding: .5em 1em;
-text-decoration: none;
-border-radius: 5px;
-color: var(--white);
+  background: var(--blue);
+  padding: .5em 1em;
+  text-decoration: none;
+  border-radius: 5px;
+  color: var(--white);
 }
 
 .section {
@@ -177,7 +178,7 @@ color: green;
 
 /* #3 - Projects Section  */
 .project-item {
-margin-top: 2em;
+  margin-top: 2em;
 }
 
 .project-image {
@@ -263,10 +264,11 @@ margin-top: 2em;
     margin: 0 auto;
     justify-content: space-evenly;
     align-items: center;
-    }
-    .project-detail {
-width: 500px;
-    }
+  }
+
+  .project-detail {
+    width: 500px;
+  }
 
 }
 
