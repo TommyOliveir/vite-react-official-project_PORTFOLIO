@@ -184,8 +184,6 @@ margin-top: 2em;
   background: red;
   max-width: 100%;
   width: 700px;
-
-
 }
 
 .project-image-item {
@@ -259,6 +257,16 @@ margin-top: 2em;
   .socials {
     display: block;
   }
+
+  .project-item {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .project-detail {
+width: 500px;
+    }
 
 }
 
