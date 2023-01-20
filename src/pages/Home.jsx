@@ -3,6 +3,7 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import ProjectList from "../components/ProjectList";
 import Socials from "../components/Socials";
+import Footer from "../components/Footer";
 // import Code from "/code.jpg"
 
 function Home() {
@@ -10,7 +11,7 @@ function Home() {
     <div>
       <div id="hero" className=" section ">
         <div className="container">
-        
+
 
           <div className="hero-text ">
             <h1>HI, MY NAME IS NAMEE OLIVEIR</h1>
@@ -32,6 +33,7 @@ function Home() {
       <div id="contact" className="section">
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 }

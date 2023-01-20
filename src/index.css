@@ -3,7 +3,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  --black: rgb(37, 36, 36);
+  --black: #101010;
   --white: #ffffff;
   --blue: rgb(43, 177, 214);
 }
