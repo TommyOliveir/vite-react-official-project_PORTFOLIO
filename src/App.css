@@ -11,6 +11,7 @@
 
 * {
   box-sizing: border-box;
+
 }
 
 #about,
@@ -125,7 +126,7 @@ color: green;
 }
 
 #hero h1 {
-  font-size: 4em;
+  font-size: 3em;
   line-height: 1.5em;
   letter-spacing: .2em;
 }
@@ -210,6 +211,10 @@ color: green;
     align-content: center;
     right: 0;
     /* background: pink; */
+  }
+  #hero h1 {
+
+    font-size: 4em;
   }
 
   nav {
