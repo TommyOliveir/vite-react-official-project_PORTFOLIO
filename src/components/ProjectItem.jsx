@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProjectItem({project}) {
   return (
-    <div>
+
       <div className="project-item">
         <div className="project-image">
         <img className="project-image-item" src={project.image} alt="" />
@@ -13,7 +13,7 @@ function ProjectItem({project}) {
           <a href="" className='btn-link'>learn more</a>
         </div>
       </div>
-    </div>
+ 
   )
 }
 

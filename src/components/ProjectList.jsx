@@ -6,6 +6,7 @@ console.log(projectdata)
 function ProjectList() {
   return (
     <div>
+        <h2 className='project-title'>Projects</h2>      
       {projectdata.map(project => (
         <ProjectItem project={project}/>
       ))}
