@@ -472,19 +472,19 @@ textarea {
 
   .contact-flex {
     display: flex;
-    background: green;
+    /* background: green; */
     flex-direction: row;
     justify-content:center;
     gap: 80px  }
 
   .contact-text {
    width: 500px;
-    background: red;
+    /* background: red; */
     margin: 0;
     text-align: left;
   }
   form {
-    background: yellow;
+    /* background: yellow; */
     width: 400px;
   }
 
