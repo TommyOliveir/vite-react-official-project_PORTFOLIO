@@ -41,6 +41,7 @@ function Form() {
           value={formData.comments}
           onChange={handleChange}
         />
+        <button id='btn-submit' type='submit'>Send</button>
 
         </form>
     </div>

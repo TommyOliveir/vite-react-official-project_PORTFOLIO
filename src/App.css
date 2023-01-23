@@ -39,6 +39,11 @@ p {
   display: inline-block;
 }
 
+.btn-link:hover {
+  opacity: .7;
+}
+
+
 .section {
   /* height: 100vh; */
   background: #fefefe;
@@ -246,17 +251,52 @@ color: green;
 }
 
 /* #5 - contact */
+
+input,
+textarea {
+  padding: .5em 1em;
+}
+
 .contact-text {
   max-width: 900px;
   margin: 0 auto;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+}
 
 .social-footer {
   background: var(--black);
   height: 400px;
   border-radius: 30px 30px 0px 0px;
 }
+
+
+#btn-submit {
+  background: var(--blue);
+  padding: .5em 1em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+
+}
+
+#btn-submit:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
 
 
 /* ///////////////////////////////////////// */
@@ -429,8 +469,24 @@ color: green;
     margin-top: 4em;
   }
 
+  .contact-flex {
+    display: flex;
+    background: green;
+    flex-direction: row;
+    justify-content:center;
+    gap: 6em;
+  }
 
-
+  .contact-text {
+   width: 600px;
+    background: red;
+    margin: 0;
+    text-align: left;
+  }
+  form {
+    background: yellow;
+    width: 400px;
+  }
 
 }
 
