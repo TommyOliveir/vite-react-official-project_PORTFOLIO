@@ -258,21 +258,52 @@ color: green;
 
 .play {
   padding-top: 5.5em;
+  cursor: pointer;
+ 
+}
+.play i:hover {
+  transform: scale(1.3);
+
+}
+.play i{
+  transition: all .3s ease;
+
 }
 
-.play-link {
-  text-decoration: none;
-}
 
 .play h2 {
   margin: 0;
   line-height: 1.5em;
   display: none;
+  color: var(--white);
 }
 
-.video {
+#about {
+  position: relative;
+}
+
+.close-video-modal i {
+  font-size: 2em;
+  transition: all .3s ease;
+}
+.close-video-modal i:hover {
+ 
+  opacity: .5;
+}
+
+.modal-video {
+  background: var(--blue);
   width: 100%;
-  margin-top: 2em;
+  height: 200px;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  text-align: right;
+}
+
+
+.hidden {
+  display: none;
 }
 
 /* #5 - contact */
@@ -322,10 +353,12 @@ textarea {
   cursor: pointer;
 }
 
-form [type="text"]:focus, input[type="email"]:focus, textarea:focus {
-outline:none;
-border: 2px solid var(--blue);
-border-radius: 3px;
+form [type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid var(--blue);
+  border-radius: 3px;
 }
 
 
@@ -490,7 +523,7 @@ border-radius: 3px;
     align-items: center;
     /* background: red; */
     gap: 1em;
-
+   
   }
 
   .about-who-is-tommy {
@@ -520,6 +553,26 @@ border-radius: 3px;
   }
 
 
+
+  .close-video-modal i {
+    font-size: 2em;
+    color: rgb(227, 19, 19);
+    cursor: pointer;
+  }
+
+  .modal-video {
+    background: transparent;
+    width: 900px;
+    height: 500px;
+    position: absolute;
+    top: 200px;
+    left: 25%;
+    text-align: right;
+    margin: 0 auto;
+  }
+
+
+
   .get-to-know-me {
     display: flex;
     flex-direction: column;
@@ -533,7 +586,7 @@ border-radius: 3px;
     /* background: green; */
     flex-direction: row;
     justify-content: space-around;
-    
+
     padding: 5em;
     align-items: center;
   }
@@ -556,10 +609,10 @@ border-radius: 3px;
     margin: 0 auto;
     gap: 2em;
     font-size: large;
-   
+
   }
 
- 
+
 
 }
 

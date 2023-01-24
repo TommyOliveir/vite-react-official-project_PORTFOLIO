@@ -1,7 +1,10 @@
 import React from 'react'
+import useToggle from '../hooks/useToggle'
 
 
 function About() {
+const [toggle, handleToggle] = useToggle()
+
   return (
     <div className='about-grid'>
       <div className="about-text">
@@ -14,10 +17,16 @@ function About() {
           <p >I'm a frontend developer based out of London, UK. I love building apps that solve real-world problems, and that are delightful to use. My specialities include TypeScript, React JS, Tailwind CSS, and Styled Components.</p>
         </div>
 
-        <a className="play-link" href=""> <div className="play">
-          <i class="ri-play-circle-line"></i>
-          <h2 style={{ color: "white" }}>Watch Tommy's Story</h2>
-        </div></a>
+         <div className="play" onClick={handleToggle}>
+          <i class="ri-play-circle-line"  ></i>
+          <h2 >Watch Tommy's Story</h2>
+        </div>
+        <div className={`modal-video ${ toggle ? 'hidden' : ''}`}>
+          <div onClick={handleToggle} className="close-video-modal"><i class="ri-close-circle-line"></i></div>
+          <iframe width='100%' height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+        </div>
+
 
       </div>
       <div className="get-to-know-me about-grid-item">
