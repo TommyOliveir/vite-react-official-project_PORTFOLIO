@@ -19,7 +19,7 @@ function Form() {
       }
 
   return (
-    <div>
+    <div className='form-container'>
         <form className="form" >
         <input
           type="text"
