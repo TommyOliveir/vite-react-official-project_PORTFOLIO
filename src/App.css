@@ -203,12 +203,14 @@ color: green;
 
 .project-item {
   margin-top: 2em;
+ 
 }
 
 .project-image {
   background: red;
   max-width: 100%;
-  width: 700px;
+  width: 500px;
+ 
 }
 
 .project-image-item {
@@ -256,6 +258,10 @@ color: green;
 
 .play {
   padding-top: 5.5em;
+}
+
+.play-link {
+text-decoration: none;
 }
 
 .play h2 {
@@ -399,6 +405,7 @@ textarea {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 3em;
+ 
   }
 
   .project-detail {
@@ -477,6 +484,7 @@ textarea {
     align-items: center;
     /* background: red; */
     gap: 1em;
+  
   }
 
   .about-who-is-tommy {
@@ -488,7 +496,7 @@ textarea {
     max-width: 900px;
   }
 
-  .about-who-is-tommy h3, p {
+  .about-who-is-tommy h3, .about-who-is-tommy p {
     margin: 0;
     color: var(--white);
   }
@@ -514,9 +522,10 @@ textarea {
 
   .contact-flex {
     display: flex;
-    background: green;
+    /* background: green; */
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 190px;
 
   }
 

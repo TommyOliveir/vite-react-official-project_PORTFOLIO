@@ -6,17 +6,18 @@ function About() {
     <div className='about-grid'>
       <div className="about-text">
         <h2>ABOUT ME</h2>
-        
+
       </div>
       <div id='about-image' className="about-image">
         <div className='about-who-is-tommy'>
           <h3 style={{ fontWeight: 200 }}><span style={{ fontWeight: 1000 }}>WHO</span> IS TOMMY</h3>
           <p >I'm a frontend developer based out of London, UK. I love building apps that solve real-world problems, and that are delightful to use. My specialities include TypeScript, React JS, Tailwind CSS, and Styled Components.</p>
         </div>
-        <div className="play">
+
+        <a className="play-link" href=""> <div className="play">
           <i class="ri-play-circle-line"></i>
           <h2 style={{ color: "white" }}>Watch Tommy's Story</h2>
-        </div>
+        </div></a>
 
       </div>
       <div className="get-to-know-me about-grid-item">
