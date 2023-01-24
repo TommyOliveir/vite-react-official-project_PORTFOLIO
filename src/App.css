@@ -26,7 +26,7 @@ p {
 
 
 #contact {
-  height: 100vh;
+  margin-bottom: 8em;
 }
 
 .btn-link {
@@ -245,6 +245,25 @@ color: green;
   background-size: cover;
 }
 
+.about-image i {
+  color: var(--white);
+  font-size: 5rem;
+}
+
+.about-who-is-tommy {
+  display: none;
+}
+
+.play {
+  padding-top: 5.5em;
+}
+
+.play h2 {
+  margin: 0;
+  line-height: 1.5em;
+  display: none;
+}
+
 .video {
   width: 100%;
   margin-top: 2em;
@@ -428,8 +447,10 @@ textarea {
 
   .skills {
     padding: 0 6em;
+    grid-column: 2;
 
   }
+
 
 
   .about-image {
@@ -442,50 +463,73 @@ textarea {
     background-image: url("skills.jpg");
     background-size: cover;
     background-position: center center;
+    background-blend-mode: darken;
     margin-bottom: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9em;
   }
 
-  .video {
-    width: 90%;
-    margin-top: 2em;
-    height: 400px;
-    margin: 0 auto;
-    grid-column: 2/ 3;
-    grid-row: 3 / 5;
-
+  .play {
+    display: flex;
+    padding-top: 0;
+    align-items: center;
+    /* background: red; */
+    gap: 1em;
   }
 
-  .video-item {
-    /* margin-top: 2em; */
-    width: 100%;
-    height: 100%;
+  .about-who-is-tommy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: #3380c5; */
+    text-align: left;
+    max-width: 900px;
   }
+
+  .about-who-is-tommy h3, p {
+    margin: 0;
+    color: var(--white);
+  }
+  .about-who-is-tommy  p {
+    padding-top: 1em;
+  
+  }
+
+  .play h2 {
+    margin: 0;
+    line-height: 1.5em;
+    display: block;
+  }
+
 
   .get-to-know-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* background: #3380c5; */
-    margin-top: 4em;
     padding-left: 6em;
   }
 
   .contact-flex {
     display: flex;
-    /* background: green; */
+    background: green;
     flex-direction: row;
-    justify-content:center;
-    gap: 80px  }
+    justify-content: space-evenly;
+
+  }
 
   .contact-text {
-   width: 500px;
+    width: 500px;
     /* background: red; */
     margin: 0;
     text-align: left;
   }
+
   form {
     /* background: yellow; */
-    width: 400px;
+    width: 500px;
   }
 
 }
