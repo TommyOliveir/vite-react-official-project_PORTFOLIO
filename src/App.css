@@ -509,7 +509,7 @@ textarea:focus {
     background-size: cover; */
     text-align: center;
     height: 500px;
-    background-image: url("skills.jpg");
+    background-image: url("/skills.jpg");
     background-size: cover;
     background-position: center center;
     background-blend-mode: darken;
