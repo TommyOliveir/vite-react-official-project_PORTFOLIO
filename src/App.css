@@ -337,7 +337,7 @@ textarea {
   background: #28292b;
   border-radius: 30px 30px 0px 0px;
 
-  padding: 2em 2em 1px;
+  padding: 4em 2em ;
 }
 
 .footer-flex h4 {
@@ -345,7 +345,7 @@ textarea {
 }
 
 .footer p {
-  color:#737a78;
+  color: #737a78;
 
 }
 
@@ -355,8 +355,8 @@ textarea {
   justify-content: space-evenly;
   align-items: flex-start;
   text-align: left;
-  color:#737a78;
-  padding-bottom: 4em;
+  color: #737a78;
+
 }
 
 .footer-flex ul {
@@ -666,7 +666,7 @@ textarea:focus {
     justify-content: space-around;
     align-items: flex-start;
     text-align: left;
-
+    
   }
 
 }
