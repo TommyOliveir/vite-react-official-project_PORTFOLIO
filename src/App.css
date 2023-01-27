@@ -336,15 +336,16 @@ textarea {
 .footer {
   background: #28292b;
   border-radius: 30px 30px 0px 0px;
-  color: var(--white);
+
   padding: 2em 2em 1px;
 }
 
 .footer-flex h4 {
-color: var(--white);
+  color: var(--white);
 }
+
 .footer p {
-  color: #716c6c;
+  color:#737a78;
 
 }
 
@@ -353,9 +354,9 @@ color: var(--white);
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
- text-align: left;
-color: #716c6c;
-padding-bottom: 4em;
+  text-align: left;
+  color:#737a78;
+  padding-bottom: 4em;
 }
 
 .footer-flex ul {
@@ -368,14 +369,15 @@ padding-bottom: 4em;
 }
 
 .copyright {
-background:var(--black);
-margin: 0;
-padding: 1em;
+  background: var(--black);
+  margin: 0;
+  padding: 1em;
 
 }
+
 .copyright p {
 
-margin: 0;
+  margin: 0;
 }
 
 #btn-submit {
@@ -407,7 +409,7 @@ textarea:focus {
 /* @media  | Header*/
 @media (min-width: 480px) {
 
-  
+
   #hero h4,
   h3 {
     font-size: 1.2em;
@@ -657,15 +659,15 @@ textarea:focus {
     font-size: 2em;
   }
 
-  
-.footer-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
- text-align: left;
 
-}
+  .footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+
+  }
 
 }
 
