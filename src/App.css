@@ -122,7 +122,9 @@ color: green;
   margin-left: auto;
 }
 
-
+.social-footer{
+  color: var(--white)
+}
 
 
 
