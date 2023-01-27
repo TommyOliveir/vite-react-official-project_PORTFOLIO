@@ -20,9 +20,9 @@ function Footer() {
           </ul>
           <ul>
             <h4>Relevant Links</h4>
-            <li><i class="ri-arrow-right-s-fill"></i>Location</li>
-            <li><i class="ri-arrow-right-s-fill"></i>tel</li>
-            <li><i class="ri-arrow-right-s-fill"></i>email</li>
+            <li><i class="ri-arrow-right-s-fill"></i>Philosophy</li>
+            <li><i class="ri-arrow-right-s-fill"></i>History</li>
+            <li><i class="ri-arrow-right-s-fill"></i>Backgrounds</li>
           </ul>
         </div>
 
