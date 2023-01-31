@@ -7,6 +7,21 @@
   color: var(--black);
 }
 
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+
+.modal-video-movie-wrap {
+  background: red;
+  width: 600px;
+  padding: 0;
+  text-align: left;
+  padding-bottom: 0;
+  margin: 0;
+}
+.modal-video button:after {
+  
+  content: "close";
+}
+
 /* #1 - General Layout*/
 
 * {
@@ -600,7 +615,7 @@ textarea:focus {
 
   .close-video-modal i {
     font-size: 2em;
-   
+
     cursor: pointer;
   }
 
