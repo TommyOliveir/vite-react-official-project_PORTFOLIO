@@ -5,6 +5,22 @@ import useToggle from '../hooks/useToggle'
 function About() {
 const [toggle, handleToggle] = useToggle()
 
+function stopyoutube() {
+  var videos = document.querySelectorAll('iframe, modal-video');
+	Array.prototype.forEach.call(videos, function (video) {
+		if (video.tagName.toLowerCase() === 'modal-video') {
+			video.pause();
+		} else {
+			var src = video.src;
+			video.src = src;
+		}
+	});
+}
+
+if(toggle) {
+  stopyoutube()
+}
+
   return (
     <div className='about-grid'>
       <div className="about-text">
@@ -21,7 +37,7 @@ const [toggle, handleToggle] = useToggle()
           <i class="ri-play-circle-line"  ></i>
           <h2 >Watch Tommy's Story</h2>
         </div>
-        <div className={`modal-video ${ toggle ? 'hidden' : ''}`}>
+        <div id="modal-video" className={`modal-video ${ toggle ? 'hidden' : ''}`}>
           <div onClick={handleToggle} className="close-video-modal"><i class="ri-close-circle-line"></i></div>
           <iframe width='100%' height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
           </iframe>
