@@ -8,31 +8,45 @@
 }
 
 /* @import 'node_modules/react-modal-video/scss/modal-video.scss'; */
-
-
-
-
-.modal-video-movie-wrap {
-  background: red;
+.modal-video-movie-wrap iframe {
+  /* width: 800px; */
   width: 100%;
+  height: 400px;
+}
+.modal-video-movie-wrap {
+  background: var(--black);
+
   padding: 0;
   text-align: center;
-  padding-bottom: 0;
-  margin: 0;
-  position: absolute;
+
+  align-items: center;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  gap: 1em;
+  /* height: 900px; */
+  height: 700px;
+  width: 100%;
+  /* top: 200px; */
+  margin-top: 40px;
+  /* position: absolute; */
 }
 .modal-video button:after {
-  
   content: "close";
+  cursor: pointer;
+
+}
+
+.modal-video button {
+  background: var(--blue);
+  border: none;
+  padding: 1em 2em;
 }
 
 /* #1 - General Layout*/
 
 * {
   box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -45,14 +59,13 @@ p {
   color: #716c6c;
 }
 
-
 #contact {
   margin-bottom: 8em;
 }
 
 .btn-link {
   background: var(--blue);
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   text-decoration: none;
   border-radius: 5px;
   color: var(--white);
@@ -61,9 +74,8 @@ p {
 }
 
 .btn-link:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
-
 
 .section {
   /* height: 100vh; */
@@ -72,7 +84,6 @@ p {
   padding: 1em;
   padding-top: 7em;
 }
-
 
 /* Header */
 .header {
@@ -124,11 +135,9 @@ nav li {
   border-top: 1px solid rgb(152, 146, 146);
   padding: 1em;
   width: 100%;
-
 }
 
 nav a {
-
   text-decoration: none;
 }
 
@@ -142,9 +151,6 @@ color: green;
 #menu-burger {
   margin-left: auto;
 }
-
-
-
 
 /* Sections */
 /* #2 -  Hero  */
@@ -165,18 +171,18 @@ color: green;
 #hero h1 {
   font-size: 3em;
   line-height: 1.5em;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   font-weight: 800;
 }
 
 .hero-text {
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   /* background: red; */
   width: 100%;
   margin: 0 auto;
   line-height: 1.5em;
   padding: 1em;
-  font-size: .7em;
+  font-size: 0.7em;
 }
 
 .socials {
@@ -187,7 +193,6 @@ color: green;
   display: none;
   font-size: 2em;
   /* background: #3380c5; */
-
 }
 
 .socials ul {
@@ -203,7 +208,7 @@ color: green;
 
 .socials li {
   border: 2px var(--black) solid;
-  padding: .4em .3em;
+  padding: 0.4em 0.3em;
 }
 
 .socials li:hover {
@@ -211,9 +216,6 @@ color: green;
   color: var(--white);
   cursor: pointer;
 }
-
-
-
 
 /* #3 - Projects Section  */
 
@@ -223,21 +225,17 @@ color: green;
 
 .project-item {
   margin-top: 2em;
-
 }
 
 .project-image {
   background: red;
   max-width: 100%;
   width: 500px;
-
 }
 
 .project-image-item {
   width: 100%;
-
 }
-
 
 /* #4 - about Section  */
 .skills {
@@ -251,7 +249,6 @@ color: green;
   list-style-type: none;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .skills ul li {
@@ -279,19 +276,15 @@ color: green;
 .play {
   padding-top: 5.5em;
   cursor: pointer;
-
 }
 
 .play i:hover {
   transform: scale(1.3);
-
 }
 
 .play i {
-  transition: all .3s ease;
-
+  transition: all 0.3s ease;
 }
-
 
 .play h2 {
   margin: 0;
@@ -306,13 +299,12 @@ color: green;
 
 .close-video-modal i {
   font-size: 2em;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   color: rgb(227, 19, 19);
 }
 
 .close-video-modal i:hover {
-
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .modal-video {
@@ -325,7 +317,6 @@ color: green;
   text-align: right;
 }
 
-
 .hidden {
   display: none;
 }
@@ -334,7 +325,7 @@ color: green;
 
 input,
 textarea {
-  padding: .5em 1em;
+  padding: 0.5em 1em;
 }
 
 .contact-text {
@@ -368,7 +359,6 @@ textarea {
 
 .footer p {
   color: #737a78;
-
 }
 
 .footer-flex {
@@ -378,7 +368,6 @@ textarea {
   align-items: flex-start;
   text-align: left;
   color: #737a78;
-
 }
 
 .footer-flex ul {
@@ -398,22 +387,20 @@ textarea {
 }
 
 .copyright p {
-
   margin: 0;
 }
 
 #btn-submit {
   background: var(--blue);
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   outline: none;
   border: none;
   border-radius: 5px;
   color: var(--white);
-
 }
 
 #btn-submit:hover {
-  opacity: .7;
+  opacity: 0.7;
   cursor: pointer;
 }
 
@@ -425,13 +412,9 @@ textarea:focus {
   border-radius: 3px;
 }
 
-
-
 /* ///////////////////////////////////////// */
 /* @media  | Header*/
 @media (min-width: 480px) {
-
-
   #hero h4,
   h3 {
     font-size: 1.2em;
@@ -445,7 +428,6 @@ textarea:focus {
   }
 
   #hero h1 {
-
     font-size: 4em;
   }
 
@@ -480,7 +462,7 @@ textarea:focus {
   }
 
   nav li:hover {
-    color: var(--blue)
+    color: var(--blue);
   }
 
   #menu-burger {
@@ -496,7 +478,6 @@ textarea:focus {
     display: block;
   }
 
-
   /*@ media-Project Section */
   .project-title {
     margin-bottom: 3em;
@@ -508,7 +489,6 @@ textarea:focus {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 3em;
-
   }
 
   .project-detail {
@@ -521,11 +501,9 @@ textarea:focus {
     margin: 0 auto;
     /* background: red; */
     padding: 0 3em;
-
   }
 
   #about {
-
     /* background: #b60e0e; */
     padding: 0;
   }
@@ -536,8 +514,6 @@ textarea:focus {
     text-align: left;
     grid-row-gap: 6em;
     grid-column-gap: 1px;
-
-
   }
 
   .about-text {
@@ -558,10 +534,7 @@ textarea:focus {
   .skills {
     padding: 0 6em;
     grid-column: 2;
-
   }
-
-
 
   .about-image {
     grid-column: 1 / 3;
@@ -589,8 +562,6 @@ textarea:focus {
     width: 1800px;
   }
 
-
-
   .about-who-is-tommy {
     display: flex;
     flex-direction: column;
@@ -608,7 +579,6 @@ textarea:focus {
 
   .about-who-is-tommy p {
     padding-top: 1em;
-
   }
 
   .play h2 {
@@ -616,8 +586,6 @@ textarea:focus {
     line-height: 1.5em;
     display: block;
   }
-
-
 
   .close-video-modal i {
     font-size: 2em;
@@ -636,7 +604,32 @@ textarea:focus {
     margin: 0 auto;
   }
 
-
+/* react modal */
+  .modal-video-movie-wrap iframe {
+    width: 800px;
+    width: 100%;
+    height: 500px;
+  }
+  .modal-video-movie-wrap {
+    background: transparent;
+  
+    padding: 0;
+    text-align: center;
+  
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1em;
+    height: 1000px;
+    width: 100%;
+    top: 100px;
+    margin-top: 40px;
+    position: absolute;
+  }
+  .modal-video button:after {
+    content: "close";
+    cursor: pointer;
+  }
 
   .get-to-know-me {
     display: flex;
@@ -674,13 +667,11 @@ textarea:focus {
     margin: 0 auto;
     gap: 2em;
     font-size: large;
-
   }
 
   h3 {
     font-size: 2em;
   }
-
 
   .footer-flex {
     display: flex;
@@ -688,9 +679,7 @@ textarea:focus {
     justify-content: space-around;
     align-items: flex-start;
     text-align: left;
-
   }
-
 
   .copyright {
     background: var(--black);
@@ -698,7 +687,6 @@ textarea:focus {
     padding: 1em 2em;
     text-align: center;
   }
-
 }
 
 /* @media  | Header*/

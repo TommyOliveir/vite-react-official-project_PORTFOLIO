@@ -1,5 +1,6 @@
 import React from 'react'
 import useToggle from '../hooks/useToggle'
+import React_modal from '../components/React_modal'
 
 
 function About() {
@@ -34,15 +35,16 @@ if(toggle) {
         </div>
 
          <div className="play" onClick={handleToggle}>
-          <i class="ri-play-circle-line"  ></i>
+          {/* <i class="ri-play-circle-line"  ></i> */}
+          <React_modal/>
           <h2 >Watch Tommy's Story</h2>
         </div>
-        <div id="modal-video" className={`modal-video ${ toggle ? 'hidden' : ''}`}>
+        {/* <div id="modal-video" className={`modal-video ${ toggle ? 'hidden' : ''}`}>
           <div onClick={handleToggle} className="close-video-modal"><i class="ri-close-circle-line"></i></div>
           <iframe width='100%' height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
           </iframe>
-        </div>
-
+        </div> */}
+  
 
       </div>
       <div className="get-to-know-me about-grid-item">

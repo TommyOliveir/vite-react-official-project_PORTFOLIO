@@ -8,10 +8,10 @@ function React_modal() {
 
 	return (
 		<React.Fragment>
-			<ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="0UJYYkK4d8s" onClose={() => setOpen(false)} />
+			<ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId="0UJYYkK4d8s" onClose={() => setOpen(false)} />
 
-			<button className="btn-primary" onClick={()=> setOpen(true)}>VIEW DEMO</button>
-          
+			{/* <button className="btn-primary" onClick={()=> setOpen(true)}>VIEW DEMO</button> */}
+			<i class="ri-play-circle-line " onClick={()=> setOpen(true)}></i>
 		</React.Fragment>
 	)
 }
