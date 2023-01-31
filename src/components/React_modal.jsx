@@ -11,7 +11,7 @@ function React_modal() {
 			<ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId="0UJYYkK4d8s" onClose={() => setOpen(false)} />
 
 			{/* <button className="btn-primary" onClick={()=> setOpen(true)}>VIEW DEMO</button> */}
-			<i class="ri-play-circle-line " onClick={()=> setOpen(true)}></i>
+			{!isOpen && <i class="ri-play-circle-line " onClick={()=> setOpen(true)}></i>}
 		</React.Fragment>
 	)
 }
