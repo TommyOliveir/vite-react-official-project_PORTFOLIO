@@ -7,19 +7,21 @@
   color: var(--black);
 }
 
-@import 'node_modules/react-modal-video/scss/modal-video.scss';
+/* @import 'node_modules/react-modal-video/scss/modal-video.scss'; */
 
 
 
 
 .modal-video-movie-wrap {
   background: red;
-  width: 600px;
+  width: 100%;
   padding: 0;
-  text-align: left;
+  text-align: center;
   padding-bottom: 0;
   margin: 0;
   position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .modal-video button:after {
   
