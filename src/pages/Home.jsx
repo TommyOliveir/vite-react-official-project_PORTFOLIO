@@ -13,7 +13,7 @@ function Home() {
         <div className="container">
 
 
-          <div className="hero-text ">
+          <div className="hero-text">
             <h1>HI, MY NAME IS NAMEE OLIVEIR</h1>
             <h4>
               I am a frontend developer based in Hungary, My specialities are
