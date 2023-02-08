@@ -411,7 +411,13 @@ form [type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   outline: none;
-  border: 2px solid var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 3px;
+}
+
+input, textarea {
+  border: 1px rgb(207, 205, 205) solid;
+ 
   border-radius: 3px;
 }
 
@@ -423,6 +429,14 @@ textarea:focus {
   h3 {
     font-size: 1.2em;
   }
+
+  p,
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size:18px;
+  }
+
 
   .header {
     display: flex;
@@ -630,8 +644,8 @@ textarea:focus {
     position: fixed;
     /* height: 80px; */
     top: 40px;
-   left: 0;
-   
+    left: 0;
+
   }
 
   .modal-video button {
