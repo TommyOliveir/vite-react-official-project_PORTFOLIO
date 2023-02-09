@@ -83,7 +83,7 @@ p {
 .section {
   /* height: 100vh; */
   background: #fefefe;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 1em;
   padding-top: 7em;
 }
