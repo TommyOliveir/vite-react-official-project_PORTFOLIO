@@ -4,6 +4,7 @@ import Contact from "../components/Contact";
 import ProjectList from "../components/ProjectList";
 import Socials from "../components/Socials";
 import Footer from "../components/Footer";
+import ProductList from "../components/ProductList";
 // import Code from "/code.jpg"
 
 function Home() {
@@ -34,6 +35,7 @@ function Home() {
         <Contact />
       </div>
       <Footer />
+     <ProductList/>
     </div>
   );
 }
